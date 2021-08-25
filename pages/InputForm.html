@@ -65,7 +65,7 @@
             <input type="range" name="salary" id="salary" min="300000" max="500000" step="100" value="400000">
             <output class="salary-output" for="salary">400000</output>
         </div>
-         <button>Submit</button>
+        <button>Submit</button>
     </form>
     <script>
         // validate first name using regexp.
@@ -129,7 +129,8 @@
         const salary = document.querySelector('#salary')
         const output = document.querySelector('.salary-output')
         output.textContent = salary.value;
-        salary.addEventListener('input', function () {
+        salary.addEventListener('input', function ()
+        {
             output.textContent = salary.value
         });
     </script>
